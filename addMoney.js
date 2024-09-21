@@ -16,4 +16,9 @@ document.addEventListener('DOMContentLoaded', function(){
         alert('Failed to add money. Please try again later');
       }
     });
+
+    document.getElementById('add-money').addEventListener('click', function(){
+        document.getElementById('cash-in-section').classList.remove('hidden');
+        document.getElementById('cash-out-section').classList.add('hidden');
+    });
 });

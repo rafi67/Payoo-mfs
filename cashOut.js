@@ -17,4 +17,10 @@ document.addEventListener('DOMContentLoaded', function(){
         alert('Failed to add money. Please try again later');
       }
     });
+
+    document.getElementById('cash-out-money').addEventListener('click', function(){
+        document.getElementById('cash-out-section').classList.remove('hidden'); 
+        document.getElementById('cash-in-section').classList.add('hidden'); 
+        
+    });
 });
